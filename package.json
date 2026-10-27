@@ -1,0 +1,30 @@
+{
+  "name": "the-local-library-api",
+  "version": "1.0.0",
+  "description": "This is a backend project built entirely with **Native Node.js** (no Express framework) to truly understand how HTTP servers work under the hood.",
+  "main": "index.js",
+   "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaazQureshi-Code/The-Local-Library-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaazQureshi-Code/The-Local-Library-API/issues"
+  },
+  "homepage": "https://github.com/MaazQureshi-Code/The-Local-Library-API#readme",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "uuid": "^14.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
