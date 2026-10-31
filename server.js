@@ -66,7 +66,7 @@ const server = http.createServer( async (req, res) => {
                 const filePath = path.join(__dirname, "data", "books.json");
                 const data = await fs.readFile(filePath, "utf-8")
                 const books = JSON.parse(data)
-                // 5. Push new book and write back to file
+                // 5. Push new book and write back to file we have 
                 books.push(newBook)
                 await fs.writeFile(filePath,JSON.stringify(books,null,2))
                 // 6. Send success response
