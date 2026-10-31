@@ -69,7 +69,7 @@ const server = http.createServer( async (req, res) => {
                 // 5. Push new book and write back to file we have 
                 books.push(newBook)
                 await fs.writeFile(filePath,JSON.stringify(books,null,2))
-                // 6. Send success response
+                // 6. Send success response to the user
                 res.writeHead(201, { "Content-Type": "application/json" });
                 res.end(JSON.stringify(newBook));
 
